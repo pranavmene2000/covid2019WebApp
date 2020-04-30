@@ -3,8 +3,8 @@ const fetch = require("node-fetch");
 const User = require("../models/User");
 const world_info = require('./world_info');
 
-const ACC_SID = 'ACe4b568bf53d70388f87e5e303dca814f'
-const ACC_TOKEN = 'f915f08b23844ca8e513f3d894f7e61a'
+const ACC_SID = '????????????????????????'
+const ACC_TOKEN = '????????????????????????'
 const client = require("twilio")(ACC_SID, ACC_TOKEN);
 
 const cron = require("node-cron");
@@ -40,10 +40,6 @@ const get_users = async () => {
   const active_users = await User.find({
     active: true,
   });
-  guj_users_num = active_users
-    .filter((user) => user.state === "Gujarat")
-    .map((user) => user.number);
-
  
   mh_users_num = active_users
     .filter((user) => user.state === "Maharashtra")
