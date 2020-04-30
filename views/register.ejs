@@ -1,0 +1,44 @@
+<div class="jumbotron">
+    
+    <form action="/users/adding_new_user" method="POST" id="NameForm">
+        <div class="form-group">
+          <label for="user">Email address</label>
+          <input type="email" class="form-control" id="user" name="user" aria-describedby="emailHelp" placeholder="Enter Email" required>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+            <label for="number">Contact No.</label>
+            <input type="text" class="form-control" name="number" id="number" placeholder="Enter Contact Number" required>
+          </div>
+        
+        <div class="form-group">
+              <label for="state">State</label>
+                  <select
+                class="form-control"
+                id="state"
+                name="state"
+                style="cursor: pointer;"
+                required="true"
+              >
+                <option
+                  selected="selected"
+                  id="state_default"
+                  value=""
+                  style="display: none;"
+                  >Select State</option
+                >
+                <option value="Gujarat">Gujarat</option>
+                <option value="Maharashtra">Maharashtra</option>
+                </select>
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" class="form-control" name="city" id="city" placeholder="Enter City" required>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        
+      </form>
+
+</div>
