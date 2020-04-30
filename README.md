@@ -6,7 +6,7 @@ Covid-2019 Simple Web App
 
 ##### 1.clone the Repository
 
-$ git clone https://github.com/Pranav-mene/covid2019WebApp.git
+`git clone https://github.com/Pranav-mene/covid2019WebApp.git`
 
 ##### 2.change directory
 
