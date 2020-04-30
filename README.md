@@ -4,7 +4,7 @@ Covid-2019 Simple Web App
 
 ## Installation
 
-1.clone thw Repository
+1.clone the Repository
 
 ```git clone https://github.com/Pranav-mene/covid2019WebApp.git
 
